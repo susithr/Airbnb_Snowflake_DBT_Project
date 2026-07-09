@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: bronze_bookings
+    config:
+      materialized: table
+      schema: bronze
+    
+
+  - name: bronze_hosts
+    config:
+      materialized: table
+      schema: bronze
+
+  - name: bronze_listings
+    config:
+      materialized: table
+      schema: bronze
+      
+  - name: silver_bookings
+    config:
+      materialized: table
+      schema: silver
+    
+
+  - name: silver_hosts
+    config:
+      materialized: table
+      schema: silver
+
+  - name: silver_listings
+    config:
+      materialized: table
+      schema: silver
+  - name: OBT
+    config:
+      materialized: table
+      schema: gold
+  - name: bookings
+    config:
+      materialized: ephemeral
+      schema: gold
+  - name: hosts
+    config:
+      materialized: ephemeral
+      schema: gold
+  - name: listings
+    config:
+      materialized: ephemeral
+      schema: gold    

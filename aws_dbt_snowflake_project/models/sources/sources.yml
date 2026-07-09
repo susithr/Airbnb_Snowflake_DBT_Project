@@ -1,0 +1,12 @@
+sources:
+  - name: staging
+    database: airbnb
+    schema: staging
+    tables:
+        - name: listings
+          description: "This is the staging table for airbnb data"
+        - name: bookings
+          description: "This is the staging table for airbnb bookings data"
+        - name: hosts
+          description: "This is the staging table for airbnb hosts data"
+          
