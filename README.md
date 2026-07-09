@@ -342,5 +342,3 @@ This project is part of a data engineering portfolio demonstration.
 - [ ] Performance benchmarking
 
 ---
-
-**Last Updated**: July 2024
